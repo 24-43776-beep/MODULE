@@ -1,0 +1,6 @@
+public class HelloJava {
+  public static void main(String[] args) {
+     System.out.println("My name is nikka");
+     System.out.println("My favorite quote is:\"when the time is right I, the lord, will make it happen.\"");
+    }
+}
