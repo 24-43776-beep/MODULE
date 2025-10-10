@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class LoginSimulation {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        String correctUsername = "admin";
+        String correctPassword = "12345";
+
+        System.out.print("Enter username: ");
+        String username = input.nextLine();
+
+        
+        if (!username.equals(correctUsername)) {
+            System.out.println("Login failed! Invalid username.");
+            input.close();
+            return; 
+        }
+
+        System.out.print("Enter password: ");
+        String password = input.nextLine();
+
+        if (password.equals(correctPassword)) {
+            System.out.println("Login successful! Welcome, " + username + ".");
+        } else {
+            System.out.println("Login failed! Invalid password.");
+        }
+
+        input.close();
+    }
+}
